@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook P3-M16</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { width: 95%; margin: auto; }
+        .dropdown { margin-bottom: 20px; }
+        .time-title, .level-title { font-size: 1.2em; font-weight: bold; }
+        .activity { margin-bottom: 30px; }
+        .banner { background-color: #4CAF50; color: white; padding: 10px; cursor: pointer; }
+        .title { font-weight: bold; }
+        .subtitle { font-style: italic; }
+        .content { display: none; padding: 10px; border: 1px solid #ddd; }
+        table { width: 100%; border-collapse: collapse; }
+        td { padding: 8px; border: 1px solid #ddd; vertical-align: top; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Playbook P3-M16</h1>
+        
+        <div class="dropdown">
+            <label for="class-time">Tiempo efectivo de Clase:</label>
+            <select id="class-time" onchange="updateContent()">
+                <option value="50">50 minutos</option>
+                <option value="45">45 minutos</option>
+                <option value="40">40 minutos</option>
+            </select>
+        </div>
+
+        <h2 id="selected-time" class="time-title">Tiempo efectivo de clase: 50 minutos</h2>
+
+<!-- Actividad 0 -->
+<div id="activity-0" class="activity">
+    <div class="banner" onclick="toggleContent('revision_mision')">
+        <div class="title">📚 Actividad 0: Revisión de Misión ⏰ Tiempo: No especificado</div>
+        <div class="subtitle">Verificar disponibilidad de materiales y dispositivos.</div>
+    </div>
+    <div id="revision_mision" class="content" style="display: none;">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (No especificado):</strong> Proyectar Diapositiva 1 y verificar que estén disponibles: computadoras/tablets con Scratch abierto, material necesario para los desafíos.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> No aplica</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Actividad 1 -->
+<div id="activity-1" class="activity">
+    <div class="banner" onclick="toggleContent('saludo_ritual')">
+        <div class="title">🎉 Actividad 1: Saludo y Ritual Gnius Club ⏰ Tiempo: 2.5 minutos</div>
+        <div class="subtitle">Dar la bienvenida y preparar el ambiente para el aprendizaje colaborativo.</div>
+    </div>
+    <div id="saludo_ritual" class="content" style="display: none;">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 2 con el logotipo de Gnius Club.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Hola, Genios! 🌟 Hoy vamos a emprender una misión de programación colaborativa en Scratch. ¿Están listos para crear juntos videojuegos increíbles? ¡Prepárense para una aventura que pondrá a prueba su creatividad y trabajo en equipo!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 2 (1 minuto):</strong> Proyectar Diapositiva 3 con emoticonos para medir el estado de ánimo.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Antes de empezar, quiero saber cómo se sienten hoy. Si están listos para esta aventura colaborativa, hagan la señal de 'genios' con la mano. Si no, den un pulgar hacia abajo. ¡No se preocupen, estamos aquí para ayudarnos!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 3 (0.5 minutos):</strong> Proyectar Diapositiva 4 para guiar a los estudiantes en el ritual.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Juntamos nuestras manos y decimos: '¡Gracias por estar aquí, Genios! Hoy será un día genial de programación colaborativa y mucha diversión en Scratch.'</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 4 (0.5 minutos):</strong> Proyectar Diapositiva 5 "Objetivos de la Misión" y leer los objetivos en voz alta.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Hoy tenemos dos grandes objetivos en nuestra misión: 1.Programar videojuegos colaborativos usando variables y condicionales. 2. Trabajar en equipo para resolver desafíos y completar un videojuego increíble en Scratch."</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Actividad 2 -->
+<div id="activity-2" class="activity">
+    <div class="banner" onclick="toggleContent('brain_vitamin')">
+        <div class="title">💪 Actividad 2: Brain Vitamin ⏰ Tiempo: 2.5 minutos</div>
+        <div class="subtitle">Ejercicio de gimnasia cerebral para activar los cerebros programadores.</div>
+    </div>
+    <div id="brain_vitamin" class="content" style="display: none;">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 6 "Gimnasia Cerebral".</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Genios! Antes de empezar a programar, vamos a activar nuestros cerebros. Vamos a hacer un ejercicio mental rápido para prepararnos para pensar como programadores. ¿Están listos? ¡Vamos a activar nuestros cerebros programadores!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 2 (1 minuto):</strong> Proyectar Diapositiva 7 con los pasos del ejercicio de manos cruzadas.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Primero, vamos a hacer el ejercicio de 'manos cruzadas'. Tomen su mano derecha y toquen su rodilla izquierda, luego lo mismo con la otra mano. Repitan esta secuencia rápidamente. Esto nos ayudará a pensar con ambos lados del cerebro, como cuando trabajamos con variables y condicionales."</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 3 (1 minuto):</strong> Proyectar Diapositiva 8 con instrucciones de condicionales.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Ahora vamos a hacer un ejercicio mental. Si digo 'Sol', ustedes levantan la mano derecha. Si digo 'Lluvia', levantan la izquierda. ¿Listos? Vamos a hacerlo más rápido: Sol, Lluvia, Sol, Sol, Lluvia. ¡Vamos a practicar como si fueran condicionales en Scratch!"</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Actividad 3 -->
+<div id="activity-3" class="activity">
+    <div class="banner" onclick="toggleContent('team_gnius')">
+        <div class="title">🤝 Actividad 3: Team Gnius ⏰ Tiempo: 7 minutos</div>
+        <div class="subtitle">Trabajo en equipo con el sistema Buddy System.</div>
+    </div>
+    <div id="team_gnius" class="content" style="display: none;">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 9: Explicar el Buddy System donde los estudiantes alternarán los roles de tutor y aprendiz.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Genios! Hoy trabajaremos en equipos utilizando el Buddy System. Un compañero será el tutor, ayudando y guiando al otro, mientras que el otro será el aprendiz. Luego, intercambiarán roles. ¡Así, ambos aprenderán y enseñarán al mismo tiempo!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 2 (0.5 minutos):</strong> Proyectar Diapositiva 10: Temporizador de 30 segundos para que los estudiantes se organicen en equipos.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Tienen 30 segundos para organizarse en parejas. ¡Rápido, que el tiempo corre!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 3 (1 minuto):</strong> Proyectar Diapositiva 11: Dar la instrucción para que un estudiante de cada equipo recoja las Magic Tablets.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Uno de ustedes debe recoger las Magic Tablets. ¡Recuerden, solo uno por equipo!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 4 (0.5 minutos):</strong> Proyectar Diapositiva 12: Temporizador de 30 segundos para que los estudiantes recojan las Magic Tablets.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Tienen 30 segundos para recoger las Magic Tablets. ¡Rápido, que el tiempo corre!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 5 (4 minutos):</strong> Proyectar Diapositiva 13: Dar 4 minutos para que el tutor realice paper programming del personaje en la Magic Tablet mientras el aprendiz observa y hace preguntas.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Es hora de que el tutor tome la Magic Tablet y haga un esquema de paper programming del personaje que van a programar en Scratch! El aprendiz observará y colaborará, haciendo preguntas y sugiriendo ideas. ¡Trabajen juntos como un equipo de genios!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 6 (0.5 minutos):</strong> Proyectar Diapositiva 14: Temporizador de 30 segundos para el intercambio de roles.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Es hora de intercambiar roles. El tutor se convierte en aprendiz y viceversa. ¡Tienen 30 segundos para hacer el cambio!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 7 (4 minutos):</strong> Proyectar Diapositiva 15: Dar 4 minutos para que el nuevo tutor realice paper programming mientras el aprendiz anterior observa y ayuda.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Ahora el nuevo tutor tomará la Magic Tablet y hará su versión del paper programming para el personaje. El aprendiz estará a su lado observando y ayudando. ¡Recuerden, genios, que trabajar en equipo es la clave!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 8 (0.5 minutos):</strong> No requiere diapositiva.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Genios! El tiempo para el Buddy System ha terminado. Ahora que ya tienen su paper programming del personaje listo, vamos a empezar con los Challenges. ¡Prepárense para una aventura de programación!"</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Actividad 4 -->
+<div id="activity-4" class="activity">
+    <div class="banner" onclick="toggleContent('challenge')">
+        <div class="title">⚙️ Actividad 4: Challenge ⏰ Tiempo: 29 minutos</div>
+        <div class="subtitle">Desafío de programación en Scratch.</div>
+    </div>
+    <div id="challenge" class="content" style="display: none;">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 16: Portada del Challenge.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Genios! Ahora es el momento de poner en práctica todo lo que hemos aprendido. Hoy vamos a trabajar en equipo y a enfrentarnos a un desafío en Scratch. ¡Es su turno para brillar y crear un videojuego increíble usando variables y condicionales!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 2 (1 minuto):</strong> Proyectar Diapositiva 17: Descripción sintetizada de los Challenges.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Tienen tres niveles de desafíos para elegir: <br><br>
+                    <strong>Rookie</strong>, donde trabajarán en atrapar objetos que aparecen al azar;<br>
+                    <strong>Master</strong>, donde deben evitar objetos peligrosos además de atraparlos;<br>
+                    y <strong>Hacker</strong>, donde colaborarán para resolver un laberinto lleno de retos.<br><br>
+                    ¡Elijan su nivel de reto y prepárense para programar!"
+                </td>
+            </tr>
+            <tr>
+                <td><strong>PASO 3 (0.5 minutos):</strong> Proyectar Diapositiva 18: Temporizador de 30 segundos para la elección de nivel.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Tienen 30 segundos para decidir qué nivel prefieren. ¡Elijan bien y prepárense para su desafío en equipo!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 4 (0.5 minutos):</strong> Proyectar Diapositiva 19: Instrucción para recoger los materiales.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Un integrante de cada equipo debe recoger las computadoras o tablets con Scratch abierto. ¡Es hora de empezar a programar!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 5 (0.5 minutos):</strong> Proyectar Diapositiva 20: Temporizador de 30 segundos para que los estudiantes recojan los materiales.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Tienen 30 segundos para recoger todo lo necesario. ¡Rápido, que el tiempo corre!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 6 (20 minutos):</strong> Proyectar Diapositiva 21: Temporizador de 20 minutos para que los estudiantes trabajen en su Challenge.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Tienen 20 minutos para desarrollar su proyecto en Scratch. ¡Trabajen en equipo, usen bien las variables y condicionales, y, sobre todo, disfruten programando!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 7 (5 minutos):</strong> Proyectar Diapositiva 22: Temporizador de 5 minutos para probar y ajustar los proyectos.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Ahora que han terminado de programar, es momento de probar su juego. Verifiquen que todo funcione bien y ajusten si es necesario. ¡Recuerden que la precisión en variables y condicionales es clave!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 8 (2 minutos):</strong> Proyectar Diapositiva 23: Preguntas de reflexión sobre los desafíos.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Gran trabajo, genios! Ahora reflexionemos un poco. ¿Qué parte del desafío fue la más difícil para su equipo? ¿Cómo lo resolvieron juntos? ¿Qué harían de manera diferente si tuvieran más tiempo?"</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Actividad 5 -->
+<div id="activity-5" class="activity">
+    <div class="banner" onclick="toggleContent('honor_dojo')">
+        <div class="title">🏅 Actividad 5: Honor de Dojo ⏰ Tiempo: 2.5 minutos</div>
+        <div class="subtitle">Reflexión sobre los objetivos alcanzados y agradecimiento al grupo.</div>
+    </div>
+    <div id="honor_dojo" class="content" style="display: none;">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 24: Revisión de los objetivos alcanzados.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Genios! Hoy hemos trabajado en equipo, enfrentando desafíos de programación con Scratch. Ahora quiero que pensemos: ¿Hemos logrado nuestros objetivos? 1. Programar videojuegos con variables y condicionales. 2. Trabajar en equipo para resolver problemas complejos. ¡Gran trabajo en todo lo que hemos hecho hoy!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 2 (0.5 minutos):</strong> Reconocimiento de logros colectivos.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Hoy no solo hemos creado videojuegos, ¡hemos trabajado como un equipo increíble! El éxito de nuestro desafío se debe a la colaboración, a la comunicación y al esfuerzo colectivo. ¡Felicidades a todos por su gran trabajo en equipo!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 3 (1.5 minutos):</strong> Proyectar Diapositiva 25: Animación sobre la organización del espacio de trabajo.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Como parte del Honor de Dojo, ahora vamos a dejar nuestro espacio de trabajo limpio y organizado, tal como lo encontramos. ¡Un verdadero genio siempre respeta su área de trabajo!"</td>
+            </tr>
+        </table>
+    </div>
+</div>
+    </div> <!-- Cierre del container -->
+
+    <!-- Script para alternar visibilidad de contenido -->
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            content.style.display = (content.style.display === "block") ? "none" : "block";
+        }
+
+        function updateContent() {
+            var time = document.getElementById("class-time").value;
+            document.getElementById("selected-time").innerText = "Tiempo efectivo de clase: " + time + " minutos";
+
+            // Mostrar/ocultar actividades basadas en la duración seleccionada
+            document.getElementById("activity-2").style.display = (time === "50" || time === "40") ? "block" : "none";
+            
+            // Ocultar Paso 7 de la Actividad 4 si el tiempo es de 40 minutos
+            var paso7 = document.querySelector("#challenge table tr:nth-child(7)");
+            paso7.style.display = (time === "40") ? "none" : "table-row";
+        }
+
+        // Inicializar el contenido según la selección por defecto
+        updateContent();
+    </script>
+</body>
+</html>
